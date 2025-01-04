@@ -1,0 +1,209 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+    height: 100vh;
+    width:100vw;
+    font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to top, #F9FBFC, #EAF3FC);
+} 
+#header{
+    height:15vh;
+    background-color:#EAF3FC;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0 20px;
+}
+#header:hover{
+background-color:#004182;
+}
+#name_head{
+    /* border:1px solid ; */
+    display:flex;
+    align-items: center;
+}
+#linkedin_name{
+    /* border:1px solid; */
+    font-size: 2rem;
+    color: #333333;
+    margin-left: 10px;
+}
+#logo_link{
+    height: 50px;
+    width:50px;
+}
+#nav_head{
+    height:40px;
+}
+#nav_content{
+    /* border:1px solid; */
+    display:flex;
+    justify-content:space-evenly;
+    font-size: 20px;
+    padding-top:10px;
+    padding-right: 80px;
+    /* margin-top: 25px; */
+}
+#menu{
+/* border:1px solid red; */
+padding-left:30px;
+/* visibility: hidden; */
+display: none;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration:none;
+    color:black;
+    padding: 10px;
+}
+/* a:hover{
+    background-color: #0A66C2;
+    color:white; 
+}*/
+#main_page{
+    height:80vh;
+    display:flex;
+    /* border:5px solid red; */
+}
+/* left side styling  */
+#main_content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center; 
+    background-image: url('bac1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    color: #fff; 
+}
+#headline
+{
+    color:#0A66C2;
+    font-size:3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-weight: bold;
+}
+#subhead{
+    color:#004182;
+    font-size:28px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+#about{
+    color:white;
+    font-size:1.2rem;
+    padding:20px;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+#joinnow{
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #0A66C2;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin-right:40px;
+}
+#joinnow:hover{
+    background-color: #004182;
+    transform: scale(1.1);
+}
+#main_content2 {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    background-color: #EAF3FC;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#tagline {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #0A66C2; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #EAF3FC; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+#features{
+display:flex;
+justify-content: space-between;
+align-items: center;
+gap:20px;
+background-color: #f3f3f3;
+border-radius: 10px;
+transition:background-color 0.3s ease-in-out;
+}
+#features:hover{
+    background-color: #e6f0ff;
+}
+.features_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    filter: grayscale(50%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor:pointer;
+}
+.features_img:hover {
+    filter: grayscale(0%);
+    transform:scale(1.1);
+    box-shadow:0 8px 16px rgba(0,0,0,0.2);
+}
+#footer{
+    /* border:1px solid; */
+    
+    background-color:#004182 ;
+    color:#ffffff;
+    padding:10px 0;
+    text-align: center;
+}
+/* Default styles (for larger screens) */
+#nav_content {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-right: 80px;
+}
+@media only screen and (max-width:376px) {
+    #main_page{
+    height:80vh;
+    display:flex;
+    flex-direction: column;
+    }
+    #nav_content{
+    display:none;
+    }
+    #menu{
+    display: block;
+    }
+    #features{
+    display:flex;
+    flex-direction: column;
+    }
+    #joinnow{
+    margin: 0px auto;
+    }
+    #footer{
+    margin-top:220vh;
+    }
+}
+
